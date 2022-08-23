@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<organizations>
+    <organization>
+        <organization>
+            <id>1</id>
+            <orgDirector>Зырянов Иван Иванович</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Знак</orgName>
+            <shortOrgName>ООО Знак</shortOrgName>
+            <telNumbers>
+                <telNumbers>2113333</telNumbers>
+                <telNumbers>2113434</telNumbers>
+                <telNumbers>2113444</telNumbers>
+            </telNumbers>
+        </organization>
+
+        <organization>
+            <id>2</id>
+            <orgDirector>Светлов Олег Юрьевич</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Импульс</orgName>
+            <shortOrgName>ООО Импульс</shortOrgName>
+            <telNumbers>
+                <telNumbers>2114444</telNumbers>
+                <telNumbers>2114455</telNumbers>
+                <telNumbers>2114456</telNumbers>
+            </telNumbers>
+        </organization>
+
+        <organization>
+            <id>3</id>
+            <orgDirector>Шапиро Ольга Николаевна</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Звезда</orgName>
+            <shortOrgName>ООО Звезда</shortOrgName>
+            <telNumbers>
+                <telNumbers>2115555</telNumbers>
+                <telNumbers>2115567</telNumbers>
+                <telNumbers>2115656</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>4</id>
+            <orgDirector>Пожидаев Валерий Сергеевич</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Землемер</orgName>
+            <shortOrgName>ООО Землемер</shortOrgName>
+            <telNumbers>
+                <telNumbers>2116666</telNumbers>
+                <telNumbers>2116667</telNumbers>
+                <telNumbers>2116668</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>5</id>
+            <orgDirector>Мазуров Андрей Васильевич</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Спутник</orgName>
+            <shortOrgName>ООО Спутник</shortOrgName>
+            <telNumbers>
+                <telNumbers>2117777</telNumbers>
+                <telNumbers>2117778</telNumbers>
+                <telNumbers>2117779</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>6</id>
+            <orgDirector>Сиротинина Ольга Ивановна</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Шпиль</orgName>
+            <shortOrgName>ООО Шпиль</shortOrgName>
+            <telNumbers>
+                <telNumbers>2118888</telNumbers>
+                <telNumbers>2118887</telNumbers>
+                <telNumbers>2118885</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>7</id>
+            <orgDirector>Куприн Вячеслав Игнатьевич</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Книголюб</orgName>
+            <shortOrgName>ООО Книголюб</shortOrgName>
+            <telNumbers>
+                <telNumbers>2888888</telNumbers>
+                <telNumbers>2888887</telNumbers>
+                <telNumbers>2888880</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>8</id>
+            <orgDirector>Шуваева Анна Олеговна</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Иртыш</orgName>
+            <shortOrgName>ООО Иртыш</shortOrgName>
+            <telNumbers>
+                <telNumbers>2155453</telNumbers>
+                <telNumbers>2153456</telNumbers>
+                <telNumbers>2159654</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>9</id>
+            <orgDirector>Ильф Илья Васильевич</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Рубеж</orgName>
+            <shortOrgName>ООО Рубеж</shortOrgName>
+            <telNumbers>
+                <telNumbers>2091234</telNumbers>
+                <telNumbers>2092435</telNumbers>
+                <telNumbers>2093532</telNumbers>
+            </telNumbers>
+        </organization>
+        <organization>
+            <id>10</id>
+            <orgDirector>Строев Илья Валентинович</orgDirector>
+            <orgName>Общество с ограниченной ответственностью Кром</orgName>
+            <shortOrgName>ООО Кром</shortOrgName>
+            <telNumbers>
+                <telNumbers>2413256</telNumbers>
+                <telNumbers>2413454</telNumbers>
+                <telNumbers>2415688</telNumbers>
+            </telNumbers>
+        </organization>
+    </organization>
+</organizations>

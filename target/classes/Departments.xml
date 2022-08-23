@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<departments>
+    <departments>
+        <department>
+            <id>1</id>
+            <depDirector>Швыдкин Михаил Юрьевич</depDirector>
+            <depName>Департамент недвижимости</depName>
+            <shortDepName>Департамент Н</shortDepName>
+            <telNumbers>
+                <telNumbers>2222222</telNumbers>
+                <telNumbers>2222223</telNumbers>
+                <telNumbers>2222224</telNumbers>
+            </telNumbers>
+        </department>
+
+        <department>
+            <id>2</id>
+            <depDirector>Иванов Александр Александрович</depDirector>
+            <depName>Общество с ограниченной ответственностью Козерог</depName>
+            <shortDepName>Козерог</shortDepName>
+            <telNumbers>
+                <telNumbers>2344444</telNumbers>
+                <telNumbers>2345645</telNumbers>
+                <telNumbers>2345567</telNumbers>
+            </telNumbers>
+        </department>
+
+        <department>
+            <id>3</id>
+            <depDirector>Сидорова Ольга Николаевна</depDirector>
+            <depName>Общество с ограниченной ответственностью Опал</depName>
+            <shortDepName>Опал</shortDepName>
+            <telNumbers>
+                <telNumbers>2355555</telNumbers>
+                <telNumbers>2355556</telNumbers>
+                <telNumbers>2355557</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>4</id>
+            <depDirector>Петров Андрей Сергеевич</depDirector>
+            <depName>Общество с ограниченной ответственностью Мореход</depName>
+            <shortDepName>Мореход</shortDepName>
+            <telNumbers>
+                <telNumbers>2366666</telNumbers>
+                <telNumbers>2366656</telNumbers>
+                <telNumbers>2367575</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>5</id>
+            <depDirector>Широкин Андрей Васильевич</depDirector>
+            <depName>Департамент бюджетной политики</depName>
+            <shortDepName>Департамент БП</shortDepName>
+            <telNumbers>
+                <telNumbers>2212121</telNumbers>
+                <telNumbers>2212223</telNumbers>
+                <telNumbers>2214533</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>6</id>
+            <depDirector>Сергеева Ольга Ивановна</depDirector>
+            <depName>Департамент земельных отношений</depName>
+            <shortDepName>Департамент ЗО</shortDepName>
+            <telNumbers>
+                <telNumbers>2233333</telNumbers>
+                <telNumbers>2234343</telNumbers>
+                <telNumbers>2234456</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>7</id>
+            <depDirector>Зимин Вячеслав Игоревич</depDirector>
+            <depName>Департамент кадастрового учета</depName>
+            <shortDepName>Департамент КУ</shortDepName>
+            <telNumbers>
+                <telNumbers>2277777</telNumbers>
+                <telNumbers>2278787</telNumbers>
+                <telNumbers>2278885</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>8</id>
+            <depDirector>Шарова Анна Олеговна</depDirector>
+            <depName>Департамент бюджетных отношений</depName>
+            <shortDepName>Департамент БО</shortDepName>
+            <telNumbers>
+                <telNumbers>2330303</telNumbers>
+                <telNumbers>2330983</telNumbers>
+                <telNumbers>2330984</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>9</id>
+            <depDirector>Рябцев Виктор Иванович</depDirector>
+            <depName>Департамент экономических отношений</depName>
+            <shortDepName>Департамент ЭО</shortDepName>
+            <telNumbers>
+                <telNumbers>2434343</telNumbers>
+                <telNumbers>2433332</telNumbers>
+                <telNumbers>2434455</telNumbers>
+            </telNumbers>
+        </department>
+        <department>
+            <id>10</id>
+            <depDirector>Окладников Илья Валентинович</depDirector>
+            <depName>Департамент внешнеторговых отношений</depName>
+            <shortDepName>Департамент ВтО</shortDepName>
+            <telNumbers>
+                <telNumbers>2555555</telNumbers>
+                <telNumbers>2556655</telNumbers>
+                <telNumbers>2556667</telNumbers>
+            </telNumbers>
+        </department>
+    </departments>
+</departments>
