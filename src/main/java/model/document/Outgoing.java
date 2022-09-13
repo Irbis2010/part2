@@ -1,23 +1,20 @@
 package model.document;
 
+import model.Staff.Person;
+
 import java.text.SimpleDateFormat;
 
 public class Outgoing extends Document {
 
-    private String destination;     //адресат
+    private Person destination;     //адресат
     private String deliveryMethod;  //способ доставки
 
 
-    @Override
-    public String getTable() {
-        return null;
-    }
-
-    public String getDestination() {
+    public Person getDestination() {
         return destination;
     }
 
-    public void setDestination(String destination) {
+    public void setDestination(Person destination) {
         this.destination = destination;
     }
 
@@ -32,10 +29,14 @@ public class Outgoing extends Document {
     @Override
     public String toString() {
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        String str ="\n"+ "Идентификатор документа: "+this.getId()+"\nНазвание документа:"+this.getNameDoc()+
+                    "\nТекст документа: "+ this.getText()+"\nРегистрационный номер документа: "+this.getRegisterNumOfDoc()+
+                    "\nДата регистрации документа: "+ this.getDateOfRegistration()+"\nАвтор: "+this.getAuthor().getSurname() +
+                    " "+ this.getAuthor().getName()+" "+this.getAuthor().getSecondName()+
+                    "\nАдресат: "+destination.getSurname() + " " + destination.getName() + " " +
+                    destination.getSecondName()+ "\nСпособ доставки: "+deliveryMethod;
 
-        String str =getAuthor() + " Id:" +  getId() + " Task" + " "  + dateFormat.format(getDateOfRegistration())
-                    + " " + getRegistrationNumber() +" \"" + getText() +"\"";
         return str;
     }
+
 }

@@ -1,21 +1,17 @@
 package model.document;
 
+import model.Staff.Person;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Task extends Document {
     private Date dateOfIssueOrder;        //дата выдачи поручения;
-    private Date  termOfExecutionOrder;   //срок исполнения поручения; - до такой то даты
-    private String executorName;          // ответственный исполнитель;
+    private Date termOfExecutionOrder;   //срок исполнения поручения; - до такой то даты
+    private Person executorName;          // ответственный исполнитель;
     private boolean control;              // признак контрольности;
-    private String controllerName;        // контролер поручения.
+    private Person controllerName;        // контролер поручения.
 
-
-
-    @Override
-    public String getTable() {
-        return null;
-    }
 
     public Date getDateOfIssueOrder() {
         return dateOfIssueOrder;
@@ -33,11 +29,11 @@ public class Task extends Document {
         this.termOfExecutionOrder = termOfExecutionOrder;
     }
 
-    public String getExecutorName() {
+    public Person getExecutorName() {
         return executorName;
     }
 
-    public void setExecutorName(String executorName) {
+    public void setExecutorName(Person executorName) {
         this.executorName = executorName;
     }
 
@@ -49,22 +45,29 @@ public class Task extends Document {
         this.control = control;
     }
 
-    public String getControllerName() {
+    public Person getControllerName() {
         return controllerName;
     }
 
-    public void setControllerName(String controllerName) {
+    public void setControllerName(Person controllerName) {
         this.controllerName = controllerName;
     }
 
     @Override
     public String toString() {
-
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-
-        String str =getAuthor() + " Id:" +  getId() + " Task" + " "  + dateFormat.format(getDateOfRegistration())
-                    + " " + getRegistrationNumber() +" \"" + getText() +"\"";
+        String cont;
+        if (control) {
+            cont = "Контрольный";
+        } else {
+            cont = "Неконтрольный";
+        }
+        String str = "\n" + "идентификатор документа:" + this.getId() + "\nНазвание документа:" + this.getNameDoc() + "\nТекст документа:" +
+                     this.getText() + "\nРегистрационный номер документа:" + this.getRegisterNumOfDoc() + "\nДата регистрации документа:" +
+                     this.getDateOfRegistration() + "\nАвтор:" + this.getAuthor().getSurname() + " " + this.getAuthor().getName() + " " +
+                     this.getAuthor().getSecondName() + "\nДата выдачи поручения:" + dateOfIssueOrder + "\nСрок исполнения получения:" + termOfExecutionOrder +
+                     "\nОтветственный исполнитель:" + executorName.getSurname() + " " + executorName.getName() +
+                     " " + executorName.getSecondName() + "\nПризнак контрольности:" + cont +
+                     "\nКонтроллер поручения:" + controllerName.getSurname() + " " + controllerName.getName() + " " + controllerName.getSurname();
         return str;
     }
 }

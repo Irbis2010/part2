@@ -1,5 +1,6 @@
 package model.document;
 
+import model.Staff.Person;
 import model.Storable;
 
 import java.util.Date;
@@ -11,13 +12,8 @@ public abstract class Document implements Comparable, Storable {
     private String name;                    // название документа;
     private String registrationNumber;      //регистрационный номер документа;
     private Date dateOfRegistration;        //дата регистрации документа;
-    private String author;                  //автор документа.
+    private Person author;                  //автор документа.
 
-
-    @Override
-    public String getTable() {
-        return null;
-    }
 
     public int getId() {
         return id;
@@ -25,6 +21,14 @@ public abstract class Document implements Comparable, Storable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNameDoc() {
+        return name;
+    }
+
+    public void setNameDoc(String nameDoc) {
+        this.name = nameDoc;
     }
 
     public String getText() {
@@ -35,20 +39,12 @@ public abstract class Document implements Comparable, Storable {
         this.text = text;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRegistrationNumber() {
+    public String getRegisterNumOfDoc() {
         return registrationNumber;
     }
 
-    public void setRegistrationNumber(String registrationNumber) {
-        this.registrationNumber = registrationNumber;
+    public void setRegisterNumOfDoc(String registerNumOfDoc) {
+        this.registrationNumber = registerNumOfDoc;
     }
 
     public Date getDateOfRegistration() {
@@ -59,32 +55,58 @@ public abstract class Document implements Comparable, Storable {
         this.dateOfRegistration = dateOfRegistration;
     }
 
-    public String getAuthor() {
+    public Person getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Person author) {
         this.author = author;
     }
 
     @Override
-    public int compareTo(Object obj) {
-        Document incoming = (Document) obj;
-        int result = author.compareTo(incoming.author);
+   /*  public int compareTo(Object obj) {
+       Document entry = (Document) obj;
+        int result = author.getSurname().compareTo(entry.author.getSurname());
+        if (result != 0) {
+            return result;
+        }
+        result = author.getName().compareTo(entry.author.getName());
+        if (result != 0) {
+            return result;
+        }
+        result = author.getSecondName().compareTo(entry.author.getSecondName());
         if (result != 0) {
             return result;
         }
 
-        result = dateOfRegistration.compareTo(incoming.dateOfRegistration);
+        result = dateOfRegistration.compareTo(entry.dateOfRegistration);
         if (result != 0) {
             return result;
         }
 
-        result = registrationNumber.compareTo(incoming.registrationNumber);
+        result = registrationNumber.compareTo(entry.registrationNumber);
         if (result != 0) {
             return result;
         }
 
-        return 0;
+        return 0;*/
+        public int compareTo(Object obj) {
+            Document incoming = (Document) obj;
+            int result = author.compareTo(incoming.author);
+            if (result != 0) {
+                return result;
+            }
+
+            result = dateOfRegistration.compareTo(incoming.dateOfRegistration);
+            if (result != 0) {
+                return result;
+            }
+
+            result = registrationNumber.compareTo(incoming.registrationNumber);
+            if (result != 0) {
+                return result;
+            }
+
+            return 0;
     }
 }
