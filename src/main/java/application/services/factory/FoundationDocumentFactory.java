@@ -1,6 +1,6 @@
-package service.factory;
+package application.services.factory;
 
-import model.document.Document;
+import application.model.document.Document;
 
 public interface FoundationDocumentFactory {
     Document createDocument(String type);

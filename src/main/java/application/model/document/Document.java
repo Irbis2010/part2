@@ -1,7 +1,7 @@
-package model.document;
+package application.model.document;
 
-import model.Staff.Person;
-import model.Storable;
+import application.model.Staff.Person;
+import application.model.Storable;
 
 import java.util.Date;
 
@@ -10,10 +10,15 @@ public abstract class Document implements Comparable, Storable {
     private int id;                         //	идентификатор документа;
     private String text;                    // текст документа;
     private String name;                    // название документа;
-    private String registrationNumber;      //регистрационный номер документа;
-    private Date dateOfRegistration;        //дата регистрации документа;
-    private Person author;                  //автор документа.
+    private String registrationNumber;      // регистрационный номер документа;
+    private Date dateOfRegistration;        // дата регистрации документа;
+    private Person author;                  // автор документа.
 
+
+    @Override
+    public String getTable() {
+        return null;
+    }
 
     public int getId() {
         return id;
@@ -64,12 +69,12 @@ public abstract class Document implements Comparable, Storable {
     }
 
     @Override
-   /*  public int compareTo(Object obj) {
+     public int compareTo(Object obj) {
        Document entry = (Document) obj;
-        int result = author.getSurname().compareTo(entry.author.getSurname());
+       int result = author.getSurname().compareTo(entry.author.getSurname());
         if (result != 0) {
             return result;
-        }
+      }
         result = author.getName().compareTo(entry.author.getName());
         if (result != 0) {
             return result;
@@ -89,24 +94,7 @@ public abstract class Document implements Comparable, Storable {
             return result;
         }
 
-        return 0;*/
-        public int compareTo(Object obj) {
-            Document incoming = (Document) obj;
-            int result = author.compareTo(incoming.author);
-            if (result != 0) {
-                return result;
-            }
+        return 0;
 
-            result = dateOfRegistration.compareTo(incoming.dateOfRegistration);
-            if (result != 0) {
-                return result;
-            }
-
-            result = registrationNumber.compareTo(incoming.registrationNumber);
-            if (result != 0) {
-                return result;
-            }
-
-            return 0;
     }
 }

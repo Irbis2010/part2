@@ -1,4 +1,4 @@
-package model.Staff;
+package application.model.Staff;
 
 
 import javax.xml.bind.annotation.XmlRootElement;

@@ -1,4 +1,4 @@
-package model.Staff;
+package application.model.Staff;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
@@ -11,7 +11,7 @@ public class Person extends Staff implements Comparable {
     private String secondName;  //поле отчество
     private String position;    //поле должность
     private String dateOfBirth; //дата рождения
-    private String telephone;   //дата рождения
+    private int telephone;   //номер телефона
 
 
 
@@ -52,11 +52,11 @@ public class Person extends Staff implements Comparable {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String getTelephone() {
+    public int getTelephone() {
         return telephone;
     }
     @XmlElement
-    public void setTelephone(String telephone) {
+    public void setTelephone(int telephone) {
         this.telephone = telephone;
     }
 

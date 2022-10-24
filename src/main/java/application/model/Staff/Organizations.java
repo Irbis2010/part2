@@ -1,4 +1,4 @@
-package model.Staff;
+package application.model.Staff;
 
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,6 +8,6 @@ import java.util.List;
 @XmlType(name = "Organizations")
 @XmlRootElement
 public class Organizations {
-    @XmlElementWrapper(name="organizations", nillable = true)
+    @XmlElementWrapper(name="organizationList", nillable = true)
     public List<Organization> organization = new ArrayList<Organization>();
 }

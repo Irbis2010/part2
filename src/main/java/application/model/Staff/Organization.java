@@ -1,4 +1,4 @@
-package model.Staff;
+package application.model.Staff;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 @XmlType(name = "organization")
 public class Organization extends Staff {
-    private String orgName;//полное наименование;
-    private String shortOrgName;//краткое наименование;
-    private String orgDirector;//руководитель;
+    private String orgName;                   //полное наименование;
+    private String shortOrgName;              //краткое наименование;
+    private String orgDirector;               //руководитель;
     private ArrayList<Integer> orgTelNumbers; //контактные телефоны;
 
     public String getOrgName() {

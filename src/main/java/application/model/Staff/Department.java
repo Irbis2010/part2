@@ -1,4 +1,4 @@
-package model.Staff;
+package application.model.Staff;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 @XmlType(name = "department")
 public class Department extends Staff {
-    private String depName;//полное наименование;
-    private String shortDepName;//краткое наименование;
-    private String depDirector;//руководитель;
-    private ArrayList<Integer> telNumbers; //контактные телефоны;
+    private String depName;                //полное наименование
+    private String shortDepName;           //краткое наименование
+    private String depDirector;            //руководитель
+    private ArrayList<Integer> telNumbers; //контактные телефоны
 
     public String getDepName() {
         return depName;

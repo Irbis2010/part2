@@ -1,8 +1,6 @@
-package model.document;
+package application.model.document;
 
-import model.Staff.Person;
-
-import java.text.SimpleDateFormat;
+import application.model.Staff.Person;
 
 public class Outgoing extends Document {
 
@@ -33,7 +31,7 @@ public class Outgoing extends Document {
                     "\nТекст документа: "+ this.getText()+"\nРегистрационный номер документа: "+this.getRegisterNumOfDoc()+
                     "\nДата регистрации документа: "+ this.getDateOfRegistration()+"\nАвтор: "+this.getAuthor().getSurname() +
                     " "+ this.getAuthor().getName()+" "+this.getAuthor().getSecondName()+
-                    "\nАдресат: "+destination.getSurname() + " " + destination.getName() + " " +
+                    "\nАдресат: "+this.destination.getSurname() + " " + destination.getName() + " " +
                     destination.getSecondName()+ "\nСпособ доставки: "+deliveryMethod;
 
         return str;

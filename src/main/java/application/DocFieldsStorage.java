@@ -1,10 +1,10 @@
-package service;
+package application;
 
-import model.Staff.Person;
-import model.document.Document;
-import model.document.Incoming;
-import model.document.Outgoing;
-import model.document.Task;
+import application.model.Staff.Person;
+import application.model.document.Document;
+import application.model.document.Incoming;
+import application.model.document.Outgoing;
+import application.model.document.Task;
 
 
 import java.text.SimpleDateFormat;
@@ -40,7 +40,7 @@ public class DocFieldsStorage {
 
             //создание коллекции для метода доставки
             deliveryMethod.put(0, "Почта России");
-            deliveryMethod.put(1, "Экспресс-одоставка");
+            deliveryMethod.put(1, "Экспресс-доставка");
             deliveryMethod.put(2, "ДНС");
             deliveryMethod.put(3, "Факс");
             deliveryMethod.put(4, "Сообщения по электронной почте");
@@ -78,6 +78,15 @@ public class DocFieldsStorage {
         Random random = new Random();
         return random.nextBoolean();
     }
+    public void addPersonToDocStorage(Integer i, Person p ){
+        personDocStorage.put(i,p);
+    }
+
+    public HashMap<Integer, Person> getPersonDocStorage( ){
+
+        return personDocStorage;
+    }
+
     public void getPerson(Integer i,Person p ){
         personDocStorage.put(i,p);
     }
@@ -99,7 +108,7 @@ public class DocFieldsStorage {
             ((Outgoing) doc).setDestination(personDocStorage.get((int)(Math.random()*personDocStorage.size())));
             ((Outgoing) doc).setDeliveryMethod(deliveryMethod.get((int)(Math.random()*5)));
         }else if (doc instanceof Task){
-            ((Task) doc).setDateOfRegistration(generateDate());
+            ((Task) doc).setDateOfIssueOrder(generateDate());
             ((Task) doc).setTermOfExecutionOrder(generateDate());
             ((Task) doc).setExecutorName(personDocStorage.get((int)(Math.random()*personDocStorage.size())));
             ((Task) doc).setControl(getControl());

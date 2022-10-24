@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <departments>
-    <departments>
+    <departmentList>
         <department>
             <id>1</id>
             <depDirector>Швыдкин Михаил Юрьевич</depDirector>
@@ -113,5 +113,5 @@
                 <telNumbers>2556667</telNumbers>
             </telNumbers>
         </department>
-    </departments>
+    </departmentList>
 </departments>

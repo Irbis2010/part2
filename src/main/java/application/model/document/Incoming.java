@@ -1,8 +1,7 @@
-package model.document;
+package application.model.document;
 
-import model.Staff.Person;
+import application.model.Staff.Person;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Incoming extends Document{
@@ -47,12 +46,12 @@ public class Incoming extends Document{
 
     @Override
     public String toString() {
-        String str = "\n"+"идентификатор документа: "+this.getId()+"\nНазвание документа: "+this.getNameDoc()+
+        String str = "\n"+"Идентификатор документа: "+this.getId()+"\nНазвание документа: "+this.getNameDoc()+
                      "\nТекст документа: "+ this.getText()+"\nРегистрационный номер документа: "+this.getRegisterNumOfDoc()+
                      "\nДата регистрации документа: "+ this.getDateOfRegistration()+"\nАвтор: "+this.getAuthor().getSurname()+" "+
                      this.getAuthor().getName()+" "+this.getAuthor().getSecondName()+
-                     "\nОтправитель: "+sender.getSurname()+" "+ sender.getName()+" "+sender.getSecondName()+
-                     "\nАдресат: "+destination.getSurname()+destination.getName() +
+                     "\nОтправитель: "+this.sender.getSurname()+" "+ sender.getName()+" "+sender.getSecondName()+
+                     "\nАдресат: "+destination.getSurname()+" "+destination.getName() + " "+
                      destination.getSecondName()+ "\nИсходящий номер: "+incomeNumber+
                      "\n" + "Исходящая дата регистрации: "+incomeRegistrationDate;
         return str;

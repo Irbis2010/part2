@@ -1,16 +1,16 @@
-package model.document;
+package application.model.document;
 
-import model.Staff.Person;
+import application.model.Staff.Person;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Task extends Document {
-    private Date dateOfIssueOrder;        //дата выдачи поручения;
-    private Date termOfExecutionOrder;   //срок исполнения поручения; - до такой то даты
-    private Person executorName;          // ответственный исполнитель;
-    private boolean control;              // признак контрольности;
-    private Person controllerName;        // контролер поручения.
+public class Task extends Document  {
+
+    private Date dateOfIssueOrder;        // дата выдачи поручения
+    private Date termOfExecutionOrder;    // срок исполнения поручения
+    private Person executorName;          // ответственный исполнитель
+    private boolean control;              // признак контрольности
+    private Person controllerName;        // контролер поручения
 
 
     public Date getDateOfIssueOrder() {
@@ -61,11 +61,11 @@ public class Task extends Document {
         } else {
             cont = "Неконтрольный";
         }
-        String str = "\n" + "идентификатор документа:" + this.getId() + "\nНазвание документа:" + this.getNameDoc() + "\nТекст документа:" +
-                     this.getText() + "\nРегистрационный номер документа:" + this.getRegisterNumOfDoc() + "\nДата регистрации документа:" +
-                     this.getDateOfRegistration() + "\nАвтор:" + this.getAuthor().getSurname() + " " + this.getAuthor().getName() + " " +
-                     this.getAuthor().getSecondName() + "\nДата выдачи поручения:" + dateOfIssueOrder + "\nСрок исполнения получения:" + termOfExecutionOrder +
-                     "\nОтветственный исполнитель:" + executorName.getSurname() + " " + executorName.getName() +
+        String str = "\n" + "Идентификатор документа:" + getId() + "\nНазвание документа:" + getNameDoc() + "\nТекст документа:" +
+                     getText() + "\nРегистрационный номер документа:" + getRegisterNumOfDoc() + "\nДата регистрации документа:" +
+                     getDateOfRegistration() + "\nАвтор:" + getAuthor().getSurname() + " " + getAuthor().getName() + " " +
+                     getAuthor().getSecondName() + "\nДата выдачи поручения:" + dateOfIssueOrder + "\nСрок исполнения поручения:" + termOfExecutionOrder +
+                     "\nОтветственный исполнитель:" + this.executorName.getSurname() + " " + executorName.getName() +
                      " " + executorName.getSecondName() + "\nПризнак контрольности:" + cont +
                      "\nКонтроллер поручения:" + controllerName.getSurname() + " " + controllerName.getName() + " " + controllerName.getSurname();
         return str;

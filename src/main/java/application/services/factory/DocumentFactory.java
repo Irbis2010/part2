@@ -1,9 +1,9 @@
-package service.factory;
+package application.services.factory;
 
-import model.document.Document;
-import model.document.Incoming;
-import model.document.Outgoing;
-import model.document.Task;
+import application.model.document.Document;
+import application.model.document.Incoming;
+import application.model.document.Outgoing;
+import application.model.document.Task;
 
 import java.lang.reflect.InvocationTargetException;
 

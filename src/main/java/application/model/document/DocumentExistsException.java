@@ -1,4 +1,4 @@
-package model.document;
+package application.model.document;
 
 public class DocumentExistsException extends Exception {
 
